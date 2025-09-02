@@ -13,38 +13,63 @@ html, body {
 }
 
 
-.container-single-header{
+.container-single-header {
   background-color: #FF6600;
   height: 50px;
 }
 
-.p-contacts{
-  color: black;
-  margin-top: 10px;
-
+.container-contacts {
+  display: flex;
+  align-items: center;
+  padding: 0 20px; 
+  height: 100%;
 }
 
-.a-contacts{
+.container-only-contacts {
+  display: flex;
+  gap: 20px; 
+  margin: 0 auto;
+}
+
+.p-contacts {
+  color: black;
+  margin: 0; 
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem; 
+}
+
+.a-contacts {
   color: black;
   text-decoration: none;
 }
 
-.container-contacts{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-
-.container-contacts .icon{
-   background-color: orange;
+.container-contacts .icon {
+  background-color: orange;
   border-radius: 50%;
   padding: 0.2rem 0.4rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-right: 0.1rem;
+  margin-right: 0.3rem;
 }
+
+.container-searchbar {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.container-searchbar .form-control {
+  height: 30px; 
+  font-size: 0.85rem;
+}
+
+.container-searchbar .btn {
+  font-size: 0.85rem;
+  padding: 0.25rem 0.75rem;
+}
+
 
 .container-single-header-bottom{
 display: flex;  
@@ -77,4 +102,33 @@ align-items: center;
   background-color: #ff8000;
   color: white !important;
 }
+
+
+.container-single-header-bottom {
+  display: flex;
+  align-items: flex-start; 
+}
+
+
+
+.title-single-page {
+  text-align: center;             
+  font-size: 3rem;                
+  font-weight: 700;              
+  color: #FF6600;                 
+  font-family: 'Arial Black', sans-serif;
+  margin: 20px 0;                
+  letter-spacing: 2px;            
+  line-height: 1.2;               
+}
+
+
+
+
+
+
+
+
+
+
 

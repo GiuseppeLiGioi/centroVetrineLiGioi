@@ -1,4 +1,14 @@
+import { NavLink, Link } from "react-router-dom";
+
 export default function NavBar() {
+
+
+
+  const getNavLinkClass = ({ isActive }) =>
+    isActive ? "nav-link active" : "nav-link";
+
+
+
   return (
     <div className="container-navbar">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -19,11 +29,11 @@ export default function NavBar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <a className="nav-link" href="#">Home</a>
+                <NavLink className={getNavLinkClass} to="/">Home</NavLink>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="/AboutUs">Chi siamo</a>
+                <NavLink className={getNavLinkClass} to="/AboutUs">Chi siamo</NavLink>
               </li>
 
               {/* Dropdown 1 */}
@@ -38,11 +48,11 @@ export default function NavBar() {
                   Arredamento negozi
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Voce 1</a></li>
-                  <li><a className="dropdown-item" href="#">Voce 2</a></li>
-                  <li><a className="dropdown-item" href="#">Voce 3</a></li>
-                  <li><a className="dropdown-item" href="#">Voce 4</a></li>
-                  <li><a className="dropdown-item" href="#">Voce 5</a></li>
+                  <li><Link className="dropdown-item" to="/negozi/voce1">Voce 1</Link></li>
+                  <li><Link className="dropdown-item" to="/negozi/voce2">Voce 2</Link></li>
+                  <li><Link className="dropdown-item" to="/negozi/voce3">Voce 3</Link></li>
+                  <li><Link className="dropdown-item" to="/negozi/voce4">Voce 4</Link></li>
+                  <li><Link className="dropdown-item" to="/negozi/voce5">Voce 5</Link></li>
                 </ul>
               </li>
 
@@ -58,32 +68,32 @@ export default function NavBar() {
                   Arredamento uffici
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Voce 1</a></li>
-                  <li><a className="dropdown-item" href="#">Voce 2</a></li>
-                  <li><a className="dropdown-item" href="#">Voce 3</a></li>
-                  <li><a className="dropdown-item" href="#">Voce 4</a></li>
-                  <li><a className="dropdown-item" href="#">Voce 5</a></li>
+                  <li><Link className="dropdown-item" to="/uffici/voce1">Voce 1</Link></li>
+                  <li><Link className="dropdown-item" to="/uffici/voce2">Voce 2</Link></li>
+                  <li><Link className="dropdown-item" to="/uffici/voce3">Voce 3</Link></li>
+                  <li><Link className="dropdown-item" to="/uffici/voce4">Voce 4</Link></li>
+                  <li><Link className="dropdown-item" to="/uffici/voce5">Voce 5</Link></li>
                 </ul>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">Manichini e busti</a>
+                <NavLink className={getNavLinkClass} to="/manichini-busti">Manichini e busti</NavLink>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">Vetrine componibili</a>
+                <NavLink className={getNavLinkClass} to="/vetrine-componibili">Vetrine componibili</NavLink>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">Stender</a>
+                <NavLink className={getNavLinkClass} to="stender">Stender</NavLink>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">Espositori e display</a>
+                <NavLink className={getNavLinkClass} to="espositori-display">Espositori e display</NavLink>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">Grucce personalizzate</a>
+                <NavLink className={getNavLinkClass} to="/grucce-personalizzate">Grucce personalizzate</NavLink>
               </li>
             </ul>
           </div>
