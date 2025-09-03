@@ -11,8 +11,12 @@ body {
   width: 100%;
   font-family: sans-serif;
   background-color: #FF6600;
+  overflow-x: hidden;
+  overflow-y: auto;
 
 }
+
+
 
 .container-single-header {
   background-color: #FF6600;
@@ -228,6 +232,8 @@ body {
 
 .img-desc-about{
   height: 300px;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .timeline-horizontal {
@@ -300,7 +306,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   gap: 50px;
-  margin: 50px 20px;
+  margin: 50px 20px 0 20px; 
   flex-wrap: wrap;
 }
 
@@ -310,6 +316,7 @@ body {
   background-color: gray;
   padding: 20px;
   border-radius: 12px;
+  max-height: none;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
@@ -323,7 +330,7 @@ body {
   letter-spacing: 1px;
 }
 
-/* Lista contatti e partner */
+
 .container-about-contacts ul,
 .container-about-partner ul {
   list-style: none;
@@ -363,3 +370,4 @@ body {
 .container-about-partner a:hover {
   color: #D46A2B;
 }
+
