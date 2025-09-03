@@ -202,3 +202,94 @@ body {
   color: inherit;
   display: flex;
 }
+.title-about{
+  margin-bottom: 20px;
+}
+.title-about-bottom{
+  margin-top: 40px;
+}
+.p-aboutUs {
+  text-align: center;           
+  font-style: italic;           
+  font-family: 'Georgia', serif; 
+  font-size: 1.2rem;          
+  color: #D46A2B;               
+  margin-top: 10px;  
+  line-height: 1.4;           
+}
+
+.container-description-about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 0 10px;
+}
+
+.img-desc-about{
+  height: 300px;
+}
+
+.timeline-horizontal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative; /* per la linea ::before */
+  padding: 20px 0;
+  margin-top: 100px;
+}
+
+.timeline-horizontal::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 90%;
+  height: 2px;
+  background-color: white;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+.timeline-item{
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.timeline-point{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color:#D46A2B;
+  margin: 0 auto 10px;
+}
+
+
+.container-achievements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  gap: 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.container-single-achievement {
+  width: calc(25% - 22.5px); 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 10px;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  padding: 10px;
+  color: #1a1a1a;
+}
+
+.container-single-achievement img {
+  max-width: 100%;
+  height: auto;
+  display: block; 
+  margin: 0 auto; 
+}
