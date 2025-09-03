@@ -293,3 +293,73 @@ body {
   display: block; 
   margin: 0 auto; 
 }
+
+
+.container-contacts-partner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  margin: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.container-about-contacts,
+.container-about-partner {
+  flex: 1 1 45%;
+  background-color: gray;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.title-about-contacts {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #D46A2B; /* stesso arancione About */
+  margin-bottom: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Lista contatti e partner */
+.container-about-contacts ul,
+.container-about-partner ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container-about-contacts li,
+.container-about-partner li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  color: #1a1a1a;
+}
+
+.container-about-contacts li:last-child,
+.container-about-partner li:last-child {
+  border-bottom: none;
+}
+
+.container-about-contacts li span {
+  font-size: 1.2rem;
+}
+
+.container-about-contacts a,
+.container-about-partner a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.container-about-contacts a:hover,
+.container-about-partner a:hover {
+  color: #D46A2B;
+}

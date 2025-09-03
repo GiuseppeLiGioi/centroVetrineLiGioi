@@ -64,8 +64,28 @@ export default function AboutUs() {
                         <p className="p-timeline-about">Progetti attuali, valori...</p>
                     </div>
 
+
+
                     
                 </div>
+                    <div className="container-contacts-partner">
+                        <div className="container-about-contacts">
+                            <h3 className="title-about-contacts">CONTATTACI</h3>
+                           <ul>
+                            <li><span>📞</span><strong>Cellulare:</strong><a href="tel:+39 3284595823">+39 3284595823</a></li>
+                            <li><span>☎️</span><strong>Tel fisso:</strong><a href="tel:+39078925580">+39 078925580</a></li>
+                            <li><span>✉️</span><strong>E-mail:</strong><a href="mailto:ligioimarco@gmail.com">ligioimarco@gmail.com</a></li>
+                           </ul>
+                        </div>
+                        <div className="container-about-partner">
+                            <h3 className="title-about-contacts">AZIENDE PARTNER</h3>
+
+                        </div>
+
+                    </div>
+
+
+
             </div>
         </>
     )
